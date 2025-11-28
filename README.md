@@ -117,7 +117,7 @@ src/main/resources/
 
 ```
 
-##🔧 Configuração e Execução
+## 🔧 Configuração e Execução
 
 **Pré-requisitos**
 
@@ -132,10 +132,11 @@ src/main/resources/
 ## 📋 Configuração do Banco de Dados
 
 1. Crie o banco de dados MySQL:
+   
    ```
    CREATE DATABASE vollmed_api;
    ````
-2. Configure as credenciais no application.properties:
+3. Configure as credenciais no application.properties:
 
    ```
  spring.datasource.url=jdbc:mysql://localhost:3306/vollmed_api
@@ -169,9 +170,11 @@ mvn spring-boot:run
 ```
 text
 http://localhost:8080/swagger-ui.html
-``´
+
+```
 
 ## 📊 Migrações de Banco (Flyway)
+
 O projeto utiliza Flyway para versionamento e gerenciamento de esquema de banco de dados.
 As migrações são executadas automaticamente na inicialização da aplicação.
 
@@ -264,6 +267,7 @@ As migrações são executadas automaticamente na inicialização da aplicação
 ✅ Especialidade obrigatória quando médico não é escolhido
 
 Cancelamento de Consultas
+
 ✅ Motivo obrigatório para cancelamento
 
 ✅ Validações específicas de cancelamento
