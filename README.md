@@ -163,7 +163,9 @@ git clone [url-do-repositorio]
 bash
 mvn spring-boot:run
 ```
+
 4. **Acesse a documentação da API:**
+   
 ```
 text
 http://localhost:8080/swagger-ui.html
